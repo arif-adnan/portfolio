@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
 .half-width {
   width: 30%;
   margin-left: 20%;
@@ -188,7 +189,8 @@ section {
 }
 
 /* skills */
-.skills {
+.skills,
+#home {
   padding-left: 325px;
   padding-right: 30px;
   background-color: lightgray;
@@ -312,4 +314,76 @@ section {
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+/* Responsiveness */
+
+/* header */
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+  #home {
+    margin-left: -300px;
+  }
+  #skills {
+    margin-left: -300px;
+  }
+  #latestWork {
+    margin-left: -300px;
+  }
+}
+
+/* contact */
+@media (max-width: 1199px) {
+  #contact {
+    position: static;
+    width: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 991px) {
+  #contact {
+    position: static;
+    width: auto;
+    padding: 20px;
+  }
+  #contact .btn-style {
+    position: relative;
+    margin-left: -4px;
+  }
+}
+/* footer */
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding: 20px;
+    color: black;
+    background-color: white;
+  }
+  #footer .credits {
+    color: black;
+    background-color: white;
+  }
+  #footer a {
+    color: blue;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    position: static;
+    width: auto;
+    margin-left: 200px;
+    color: black;
+    background-color: white;
+  }
+  #footer .credits {
+    color: black;
+    background-color: white;
+  }
 }
