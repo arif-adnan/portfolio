@@ -288,6 +288,13 @@ section {
   #home {
     margin-left: -300px;
   }
+  #home .img-fluid {
+    margin-left: -300px;
+    display: table-column;
+    margin-top: 30px;
+    margin-left: -25px;
+  }
+
   #skills {
     margin-left: -300px;
   }
@@ -330,19 +337,5 @@ section {
   }
   #footer a {
     color: blue;
-  }
-}
-
-@media (max-width: 768px) {
-  #footer {
-    position: static;
-    width: auto;
-    margin-left: 200px;
-    color: black;
-    background-color: white;
-  }
-  #footer .credits {
-    color: black;
-    background-color: white;
   }
 }
